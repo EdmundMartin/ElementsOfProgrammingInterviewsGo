@@ -23,7 +23,7 @@ func FindAnagrams(dictionary []string) [][]string {
 		sortedStringAnagrams[s] = val
 	}
 
-	results := [][]string{}
+	var results [][]string
 
 	for _, value := range sortedStringAnagrams {
 		if len(value) >= 2 {
